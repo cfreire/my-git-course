@@ -3,3 +3,4 @@
 2. Add a remote line
 3. I'm design a new feature
 4. Merge ok
+5. Bad choice
