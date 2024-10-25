@@ -1,0 +1,7 @@
+deploy:
+  script:
+  - docker login registry.gitlab.com -u $USERNAME -p $PASSWORD
+  - docker build -t registry.gitlab.com/form-cfreire/my-webcounter .
+  - docker push registry.gitlab.com/form-cfreire/my-webcounter
+  - docker stack deploy -c docker-compose.yml app
+  
